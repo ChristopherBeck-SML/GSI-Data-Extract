@@ -2,10 +2,10 @@ import sys
 from cx_Freeze import setup, Executable
 
 build_exe_options = {
-    "excludes": ["tkinter", "unittest"],
+    "excludes": ['_gtkagg', '_tkagg', 'bsddb', 'curses', 'email', 'pywin.debugger','pywin.debugger.dbgcon', 'pywin.dialogs', 'tcl','Tkconstants', 'Tkinter'],
     "zip_include_packages": ["encodings", "PySide6"],
     "optimize": 1,
-    "includefiles": ["README.md"]
+    "include_files": ["README.md","install.cmd"]
 }
 
 target = Executable(
