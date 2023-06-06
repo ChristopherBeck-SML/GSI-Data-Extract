@@ -5,6 +5,7 @@ build_exe_options = {
     "excludes": ["tkinter", "unittest"],
     "zip_include_packages": ["encodings", "PySide6"],
     "optimize": 1,
+    "includefiles": ["README.md"]
 }
 
 target = Executable(
